@@ -1,6 +1,6 @@
 @charset"utf-8";
 
-/*MENU*/
+
 
 /*
 - esse nivel que farei o menu com os 'OL' sumindo e so aparecendo quando o cursor esta em cima no 'ul'
@@ -19,13 +19,25 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:  cover; 
+    margin: 0;
 }
-#entrada{
-    padding: auto;
-    margin: auto;  
-    width: auto;
-    height: 700px;
-    top: -200px; 
+
+
+/*MENU*/
+header{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu{
+    list-style: none;
+}
+li{
+    display: inline-block;
+
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 
 /*TITULO SITE*/
@@ -40,17 +52,18 @@ h1{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
 }
 
-main{
-    width: 1000px;
+.titulo{
+    width: 990px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: white;
-    margin: auto;   
+    margin: auto;
+    margin-bottom: 150px;   
 
 }
 
 /*INTRODUÇÃO*/
-#intro{
+.intro{
     background-color: white;
     width: 900px;
     margin: auto;
@@ -90,16 +103,15 @@ a{
 /*FOOTER(RODAPÉ)*/
 footer{
     background-color:#015144;
-    background-size: 100%;
-    margin: auto;
-    width: auto;
+    box-shadow: -2px -1px 30px black;
     text-align: center;
     padding: 5px;
-    margin-top: 30px;
+    margin-top: 65px;
 }   
 
 .h3-rodape{
     padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     color: white;
 }
@@ -128,8 +140,20 @@ footer{
     color: #001c19;
 }
 .a-rodape:visited{
-    color: #75756e;
+    color: #8a8a72;
 }
 ol{
     font-size: 0.8em;
+}
+
+aside{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3e6861;
+}
+h4{
+    margin-bottom: 5px;
+}
+.aside-rodape{
+    margin-top: 5px;
 }
